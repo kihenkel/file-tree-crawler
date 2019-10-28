@@ -1,0 +1,11 @@
+{
+  "name": "file-tree-crawler",
+  "version": "1.0.0",
+  "description": "A simple directory crawler that saves the file tree into a json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kilian Henkel",
+  "license": "ISC"
+}
