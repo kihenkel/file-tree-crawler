@@ -49,8 +49,6 @@ readdir(initialPath)
   .then(fileNames => fileNames.filter(fileName => !ignored.includes(fileName)))
   .then(fileNames => parseFileInfosToFileTree(initialPath, fileNames))
   .then(fileTree => {
-    const result = { initialPath, children: fileTree };
-    const fileToWrite = `results/file-tree_${new Date().toISOString().substr(0, 19).replace(/[T\:]/g, '-')}.json`;
-    fs.writeFileSync(fileToWrite, JSON.stringify(result, null, ' '), 'utf8');
-  })
+    return { initialPath, children: fileTree };
+  });
 
