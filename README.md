@@ -5,4 +5,4 @@ Make sure to create a `results` folder in this repository:
 
 That's it!
 ## Example
-`node .\index.js "path/to/folder" -i ".git,.github,.gradle,.idea,.settings,node_modules"`
+`node .\cli.js "path/to/folder" -i ".git,.github,.gradle,.idea,.settings,node_modules"`
