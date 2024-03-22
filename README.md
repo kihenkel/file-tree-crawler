@@ -8,9 +8,7 @@ You can use the file-tree-crawler in two ways:
 
 ### Usage as standalone application (`cli.js`)
 You can execute the standalone application using node and `cli.js`.
-Generated JSON files will be saved in a `results` folder. Make sure to create that folder in this repository:
-
-`mkdir results`
+Generated JSON files will be saved in a `results` folder.
 
 #### Flags
 | Flag(s)  | Description |
@@ -20,13 +18,13 @@ Generated JSON files will be saved in a `results` folder. Make sure to create th
 | -m, --mask, --fileMask  | File mask (regex) |
 
 #### Examples
-`node .\cli.js "path/to/folder"`
+`node ./cli.js "path/to/folder"`
 
-`node .\cli.js "path/to/folder" -f`
+`node ./cli.js "path/to/folder" -f`
 
-`node .\cli.js "path/to/folder" -i ".git,.github,.gradle,.idea,.settings,node_modules,WEB-INF"`
+`node ./cli.js "path/to/folder" -i ".git,.github,.gradle,.idea,.settings,node_modules,WEB-INF"`
 
-`node .\cli.js "path/to/folder" -i ".git,.github,.gradle,.idea,.settings,node_modules,WEB-INF" -f -m ".+Test.js.?$"`
+`node ./cli.js "path/to/folder" -i ".git,.github,.gradle,.idea,.settings,node_modules,WEB-INF" -f -m ".+Test.js.?$"`
 
 
 ### Usage as npm package
